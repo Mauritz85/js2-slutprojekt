@@ -1,0 +1,23 @@
+{
+  "name": "js2-slutprojekt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/scripts/index.ts",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "firebase": "^10.12.2"
+  }
+}

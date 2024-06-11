@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="modules/firebase.ts" type="module"></script>
+    <script src="scripts/index.ts" type="module"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <template id="login">
+        <div id="grid-container">
+            <div class="grid-box" id="one">
+                <h1>amarillo</h1>
+            </div>
+
+            <div class="grid-box" id="two">
+            </div>
+
+            <div class="grid-box" id="three">
+            </div>
+
+            <div class="grid-box" id="four">
+                <form id="login-form" action="">
+                    <h3>login</h3>
+                    <input id="username-input" type="username" placeholder="Username">
+                    <input id="password-input" type="password" placeholder="Password">
+                    <button id="login-btn">login</button>
+                    <a href="#" id="register-link">not registrered? click here</a>
+                </form>
+            </div>
+
+        </div>
+    </template>
+
+    <template id="register">
+        <div class="register" id="grid-container">
+            <div class="grid-box" id="one">
+                <h1>amarillo</h1>
+            </div>
+
+            <div class="grid-box" id="two">
+            </div>
+
+            <div class="grid-box" id="three">
+
+            </div>
+
+            <div class="grid-box" id="four">
+                <form id="register-form" action="">
+                    <h3>register</h3>
+                    username<input id="username-input" type="username" placeholder="">
+                    password<input id="password-input" type="password" placeholder="">
+
+                    Please select your preferred profile image
+                    <fieldset>
+                        <input class="img-choice" type="radio" id="img-choice1" name="img-choice" value="duck" />
+                        <label for="img-choice1">
+                            <img class="register-img" src="images/duck.jpg" alt=""></label>
+                        <input class="img-choice" type="radio" id="img-choice2" name="img-choice" value="flower" />
+                        <label for="img-choice2">
+                            <img class="register-img" src="images/flower.jpg" alt=""></label>
+                        <input class="img-choice" type="radio" id="img-choice3" name="img-choice" value="lemon" />
+                        <label for="img-choice3">
+                            <img class="register-img" src="images/lemon.jpg" alt=""></label>
+                    </fieldset>
+
+                    <button id="register-btn">Register User</button>
+                </form>
+
+            </div>
+
+        </div>
+    </template>
+    <template id="home">
+
+        <div class="home" id="grid-container">
+            <div class="grid-box" id="one">
+                <h1>amarillo</h1>
+            </div>
+
+            <div class="grid-box" id="two">
+                <div id="profileimg-box">
+                    <img id="profile-img" alt="">
+                </div>
+                <h2 id="username-head"></h2>
+
+            </div>
+
+            <div class="grid-box" id="three">
+                <div id="nav">
+                    <li><a id="home-link" href="#">home</a></li>
+                    <li><a id="member-link" href="#">members</a></li>
+                    <li><a id="logout-link" href="#">logout</a></li>
+                </div>
+            </div>
+
+            <div class="grid-box" id="four">
+                <form id="user-form">
+                    <textarea id="entry-input" placeholder="What do you want to share?"></textarea>
+                    <button id="entry-btn" type="submit">Submit</button>
+                </form>
+                <div id="entry-container"></div>
+            </div>
+        </div>
+    </template>
+</body>
+
+</html>
